@@ -4,8 +4,12 @@ function addTask() {
 
   if (taskInput.value.trim() !== "") {
       var li = document.createElement("li");
-      li.textContent = taskInput.value;
+      li.innerHTML = taskInput.value + ' <button class="deleteButton" onclick="removeTask(this)">Supprimer</button>';
       taskList.appendChild(li);
       taskInput.value = "";
   }
+}
+
+function removeTask(element) {
+  element.parentNode.remove();
 }
