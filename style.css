@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
